@@ -15,7 +15,7 @@ export const HomeContent = () => {
     ) {
       window.location.assign('/locks')
     } else {
-      window.location.assign('https://unlock.zencafe.io')
+      window.location.assign('https://unlock-protocol.com')
     }
   })
   return (<></>)
