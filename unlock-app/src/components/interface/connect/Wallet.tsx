@@ -10,7 +10,7 @@ interface ConnectWalletProps {
   onUnlockAccount: () => void
 }
 
-export const ConnectWallet = ({ onUnlockAccount }: ConnectWalletProps) => {
+export const ConnectWallet = ({  }: ConnectWalletProps) => {
   const { authenticateWithProvider } = useAuthenticate()
   const [recentlyUsedProvider] = useLocalStorage(RECENTLY_USED_PROVIDER, null)
   const [isConnecting, setIsConnecting] = useState('')
