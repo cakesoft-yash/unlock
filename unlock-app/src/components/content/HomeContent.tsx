@@ -6,7 +6,7 @@ import React, { useEffect } from 'react'
 // import Loading from '../interface/Loading'
 // import { AppLayout } from '../interface/layouts/AppLayout'
 
-export const HomeContent = ({ config }: any) => {
+export const HomeContent = () => {
   useEffect(() => {
     // In dev, redirect to dashboard, otherwise to static site!
     if (
