@@ -10,7 +10,7 @@ interface ConnectWalletProps {
   onUnlockAccount: () => void
 }
 
-export const ConnectWallet = ({ onUnlockAccount }: ConnectWalletProps) => {
+export const ConnectWallet = ({  }: ConnectWalletProps) => {
   const { authenticateWithProvider } = useAuthenticate()
   const [recentlyUsedProvider] = useLocalStorage(RECENTLY_USED_PROVIDER, null)
   const [isConnecting, setIsConnecting] = useState('')
@@ -56,7 +56,7 @@ export const ConnectWallet = ({ onUnlockAccount }: ConnectWalletProps) => {
         </ConnectButton>
       </div>
       <div className="grid gap-4 p-6">
-        <div className="px-2 text-sm text-center text-gray-600">
+        {/* <div className="px-2 text-sm text-center text-gray-600">
           If you previously created an unlock account or do not have a wallet,
           use this option.
         </div>
@@ -70,7 +70,7 @@ export const ConnectWallet = ({ onUnlockAccount }: ConnectWalletProps) => {
           }}
         >
           Unlock Account
-        </ConnectButton>
+        </ConnectButton> */}
       </div>
     </div>
   )
