@@ -6,7 +6,7 @@ import { OpenGraphTags } from '../page/OpenGraphTags'
 import Loading from '../interface/Loading'
 import { AppLayout } from '../interface/layouts/AppLayout'
 
-export const HomeContent = () => {
+export const HomeContent = ({ config }: any) => {
   useEffect(() => {
     // In dev, redirect to dashboard, otherwise to static site!
     if (
