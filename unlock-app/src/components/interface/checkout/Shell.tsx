@@ -76,16 +76,16 @@ export function CheckoutHead({ title, iconURL }: CheckoutHeadProps) {
             width={64}
             height={64}
           />
-          <Avatar.Fallback>
+          {/* <Avatar.Fallback>
             <SvgComponents.UnlockMonogram
               className="rounded-full"
               height={64}
               width={64}
             />
-          </Avatar.Fallback>
+          </Avatar.Fallback> */}
         </Avatar.Root>
         <div>
-          <h1 className="text-lg font-bold"> {title || 'Unlock Protocol'} </h1>
+          <h1 className="text-lg font-bold"> {title || 'Zencafe'} </h1>
         </div>
       </div>
     </header>

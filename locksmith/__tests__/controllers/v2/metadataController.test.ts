@@ -380,7 +380,7 @@ describe('Metadata v2 endpoints for locksmith', () => {
     expect(lockMetadataResponse.status).toBe(200)
     expect(lockMetadataResponse.body).toStrictEqual({
       description:
-        'Test Lock is a lock created using contracts from Unlock Labs. Unlock is a protocol for memberships. https://unlock-protocol.com/',
+        'Test Lock is a lock created using contracts from Unlock Labs. Unlock is a protocol for memberships.',
       image: `https://staging-locksmith.unlock-protocol.com/lock/${lockAddress}/icon`,
       name: 'Test Lock',
     })

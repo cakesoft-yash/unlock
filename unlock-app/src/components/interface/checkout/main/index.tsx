@@ -278,7 +278,13 @@ export function Checkout({
         onClose={!paywallConfig?.persistentCheckout ? onClose : undefined}
         onBack={onBack}
       />
-      <CheckoutHead iconURL={paywallConfig.icon} title={paywallConfig.title} />
+      <CheckoutHead
+        iconURL={
+          paywallConfig.icon ||
+          'https://nft-marketplace-v2.zocial.io/ZenCafeLogo.png'
+        }
+        title={paywallConfig.title}
+      />
       <Content />
     </div>
   )

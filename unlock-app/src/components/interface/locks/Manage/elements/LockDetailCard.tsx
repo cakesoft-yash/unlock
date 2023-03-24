@@ -252,7 +252,7 @@ export const LockDetailCard = ({
               </Detail>
             </div>
           </div>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <span className="text-sm leading-tight text-gray-500">
               Need to update terms?{' '}
               <Link href={settingsPageUrl}>
@@ -262,7 +262,7 @@ export const LockDetailCard = ({
               </Link>{' '}
               to update your contract&apos;s settings.
             </span>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
