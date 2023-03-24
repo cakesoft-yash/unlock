@@ -89,12 +89,12 @@
     "vitest-localstorage-mock": "0.0.1"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0 -p 3500",
     "build": "next build --no-lint",
     "deploy": "yarn build && next export -o out",
     "deploy-netlify": "./scripts/deploy-netlify.sh",
     "deploy-fleek": "./scripts/deploy-fleek.sh",
-    "start": "yarn build && NODE_ENV=production next start",
+    "start": "yarn build && NODE_ENV=production next start -H 0.0.0.0 -p 3500",
     "test": "UNLOCK_ENV=test vitest run --coverage --environment=jsdom",
     "lint": "eslint --resolve-plugins-relative-to ../packages/eslint-config --ext .tsx,.ts,.js src/",
     "ci": "yarn test && yarn lint && yarn build"
