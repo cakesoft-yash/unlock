@@ -171,7 +171,7 @@ export const LockDetailCard = ({
       }
     )
 
-  const settingsPageUrl = `/locks/settings?address=${lockAddress}&network=${network}`
+  // const settingsPageUrl = `/locks/settings?address=${lockAddress}&network=${network}`
   const metadataPageUrl = `/locks/metadata?lockAddress=${lockAddress}&network=${network}`
   return (
     <>
@@ -212,9 +212,9 @@ export const LockDetailCard = ({
                   {lockMetadata.external_url}
                 </a>
               )}
-              {lockMetadata?.description && (
+              {/* {lockMetadata?.description && (
                 <p className="text-gray-700 ">{lockMetadata.description}</p>
-              )}
+              )} */}
             </div>
           )}
           <div className="flex flex-col mt-6 divide-y divide-black">
