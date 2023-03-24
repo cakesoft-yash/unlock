@@ -157,7 +157,10 @@ export const AppLayout = ({
       mobile: 'bg-ui-secondary-200 px-6',
     },
     showSocialIcons: false,
-    logo: { url: '/locks', src: 'https://nft-marketplace-v2.zocial.io/ZenCafeLogo.png' },
+    logo: {
+      url: '/locks',
+      src: 'https://nft-marketplace-v2.zocial.io/ZenCafeLogo.png',
+    },
     menuSections: showLinks
       ? [
           {
