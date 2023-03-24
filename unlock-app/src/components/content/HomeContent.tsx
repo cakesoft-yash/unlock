@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
-// import Head from 'next/head'
-// import { pageTitle } from '../../constants'
-// import { TwitterTags } from '../page/TwitterTags'
-// import { OpenGraphTags } from '../page/OpenGraphTags'
-// import Loading from '../interface/Loading'
-// import { AppLayout } from '../interface/layouts/AppLayout'
+import Head from 'next/head'
+import { pageTitle } from '../../constants'
+import { TwitterTags } from '../page/TwitterTags'
+import { OpenGraphTags } from '../page/OpenGraphTags'
+import Loading from '../interface/Loading'
+import { AppLayout } from '../interface/layouts/AppLayout'
 
 export const HomeContent = () => {
   useEffect(() => {
@@ -15,8 +15,17 @@ export const HomeContent = () => {
     ) {
       window.location.assign('/locks')
     } else {
-      window.location.assign('https://unlock.zencafe.io/locks')
+      window.location.assign('https://unlock.zencafe.io')
     }
   })
-  return (<></>)
+  return (
+    <AppLayout authRequired={false} showLinks={false}>
+      <Head>
+        <title>{pageTitle()}</title>
+        <TwitterTags />
+        <OpenGraphTags />
+      </Head>
+      <Loading />
+    </AppLayout>
+  )
 }
