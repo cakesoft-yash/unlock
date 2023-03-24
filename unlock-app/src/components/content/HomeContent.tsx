@@ -13,11 +13,12 @@ export const HomeContent = ({ config }: any) => {
       ['localhost', '127.0.0.1', '0.0,0,0'].indexOf(window.location.hostname) >
       -1
     ) {
-      window.location.assign('/locks')
+      // window.location.assign('/locks')
     } else {
-      window.location.assign(config && config.unlockStaticUrl ? config.unlockStaticUrl : '/locks')
+      console.log({ config });
+      window.location.assign(config.unlockStaticUrl)
     }
-  }, [])
+  })
   return (
     <AppLayout authRequired={false} showLinks={false}>
       <Head>
