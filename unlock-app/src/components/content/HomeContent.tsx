@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import Head from 'next/head'
-import { pageTitle } from '../../constants'
-import { TwitterTags } from '../page/TwitterTags'
-import { OpenGraphTags } from '../page/OpenGraphTags'
-import Loading from '../interface/Loading'
+// import Head from 'next/head'
+// import { pageTitle } from '../../constants'
+// import { TwitterTags } from '../page/TwitterTags'
+// import { OpenGraphTags } from '../page/OpenGraphTags'
+// import Loading from '../interface/Loading'
 import { AppLayout } from '../interface/layouts/AppLayout'
 
-export const HomeContent = () => {
+export const HomeContent = ({ config }: any) => {
   useEffect(() => {
     // In dev, redirect to dashboard, otherwise to static site!
     if (
@@ -15,17 +15,18 @@ export const HomeContent = () => {
     ) {
       window.location.assign('/locks')
     } else {
-      // window.location.assign(config && config.unlockStaticUrl ? config.unlockStaticUrl : '/locks')
+      console.log('In else');
+      window.location.assign(config && config.unlockStaticUrl ? config.unlockStaticUrl : '/locks')
     }
   })
   return (
     <AppLayout authRequired={false} showLinks={false}>
-      <Head>
+      {/* <Head>
         <title>{pageTitle()}</title>
         <TwitterTags />
         <OpenGraphTags />
       </Head>
-      <Loading />
+      <Loading /> */}
     </AppLayout>
   )
 }
