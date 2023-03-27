@@ -15,7 +15,6 @@ export const HomeContent = ({ config }: any) => {
     ) {
       window.location.assign('/locks')
     } else {
-      console.log('In else');
       window.location.assign(config && config.unlockStaticUrl ? config.unlockStaticUrl : '/locks')
     }
   })
