@@ -159,7 +159,7 @@ export const AppLayout = ({
     showSocialIcons: false,
     logo: {
       url: '/locks',
-      src: 'https://image.zocial.io/zencafe/cup.png',
+      src: 'https://image.zocial.io/zencafe/ZenCafeLogo.png',
     },
     menuSections: showLinks
       ? [
