@@ -281,7 +281,7 @@ export function Checkout({
       <CheckoutHead
         iconURL={
           paywallConfig.icon ||
-          'https://nft-marketplace-v2.zocial.io/ZenCafeLogo.png'
+          'https://image.zocial.io/zencafe/cup.png'
         }
         title={paywallConfig.title}
       />

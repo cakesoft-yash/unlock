@@ -159,7 +159,7 @@ export const AppLayout = ({
     showSocialIcons: false,
     logo: {
       url: '/locks',
-      src: 'https://nft-marketplace-v2.zocial.io/ZenCafeLogo.png',
+      src: 'https://image.zocial.io/zencafe/cup.png',
     },
     menuSections: showLinks
       ? [
