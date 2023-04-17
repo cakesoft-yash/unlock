@@ -1,7 +1,7 @@
 import useTermsOfService from '~/hooks/useTermsOfService'
 import { useConfig } from '~/utils/withConfig'
 import Loading from '../Loading'
-import { Button, Footer, HeaderNav, Modal } from '@unlock-protocol/ui'
+import { Button, HeaderNav, Modal } from '@unlock-protocol/ui'
 import { Container } from '../Container'
 import { useAuth } from '~/contexts/AuthenticationContext'
 import React, { ReactNode } from 'react'
@@ -283,7 +283,7 @@ export const AppLayout = ({
           </div>
         </div>
         <div className="px-4 mx-auto lg:container">
-          <Footer {...FOOTER} />
+          {/* <Footer {...FOOTER} /> */}
         </div>
       </div>
     </div>
