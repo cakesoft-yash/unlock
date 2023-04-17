@@ -168,7 +168,7 @@ export function Ticket({
             lineHeight: '16px',
           }}
         >
-          Powered by Unlock Protocol
+          Powered by Zencafe
         </div>
       </div>
       <div

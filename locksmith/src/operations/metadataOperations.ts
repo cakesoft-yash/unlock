@@ -153,7 +153,7 @@ const defaultMappings = (address: string, host: string, keyId: string) => {
   })
 
   // Append description
-  defaultResponse.description = `${defaultResponse.description} Unlock is a protocol for memberships. https://unlock-protocol.com/`
+  defaultResponse.description = `${defaultResponse.description} Unlock is a protocol for memberships.`
 
   return defaultResponse
 }

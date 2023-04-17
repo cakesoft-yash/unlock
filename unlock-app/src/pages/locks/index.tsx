@@ -14,8 +14,7 @@ const Locks: NextPage = () => {
     return (
       <div className="flex flex-col gap-4 md:gap-0 md:justify-between md:flex-row">
         <span className="w-full max-w-lg text-base text-gray-700">
-          A Lock is a smart contract you create, deploy, and own on Unlock
-          Protocol
+          A ZenCafe membership is a smart contract you create, deploy.
         </span>
         {account && (
           <Link href="/locks/create">

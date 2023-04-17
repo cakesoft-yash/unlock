@@ -267,7 +267,13 @@ export function Checkout({
         onClose={!paywallConfig?.persistentCheckout ? onClose : undefined}
         onBack={onBack}
       />
-      <CheckoutHead iconURL={paywallConfig.icon} title={paywallConfig.title} />
+      <CheckoutHead
+        iconURL={
+          paywallConfig.icon ||
+          'https://image.zocial.io/zencafe/cup.png'
+        }
+        title={paywallConfig.title}
+      />
       <Content />
     </div>
   )

@@ -18,7 +18,7 @@ export const HomeContent = () => {
     ) {
       router.push('/locks')
     } else {
-      router.push(config.unlockStaticUrl)
+      router.push(config && config.unlockStaticUrl ? config.unlockStaticUrl : '/locks')
     }
   })
   return (

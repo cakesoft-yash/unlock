@@ -31,7 +31,7 @@ export function getPaywallConfigFromQuery(
   }
   if (typeof query.lock === 'string') {
     return {
-      title: query.title || 'Unlock Protocol',
+      title: query.title || 'Zencafe',
       network: Number(query.network),
       locks: {
         [query.lock]: {},
